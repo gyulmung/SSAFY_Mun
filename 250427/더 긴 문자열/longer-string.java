@@ -8,10 +8,10 @@ public class Main {
         String a = arr[0];
         String b = arr[1];
         if(a.length() > b.length()){
-            System.out.printf("Coding %d", a.length());
+            System.out.printf("%s %d", a, a.length());
         }
         else if(a.length() < b.length()){
-            System.out.printf("Coding %d", b.length());
+            System.out.printf("%s %d", b, b.length());
         }
         else{
             System.out.printf("same");
