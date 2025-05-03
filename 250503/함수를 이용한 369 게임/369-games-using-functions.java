@@ -4,7 +4,7 @@ public class Main {
     public static int func(int a, int b){
         int cnt = 0;
         for(int i = a ; i <= b ; i++ ){
-            if (i % 3 == 0 || i % 10 == 3 || i % 10 == 6 || i % 10 == 9 || i / 10 == 3 || i / 10 == 6 | i / 10 == 9){
+            if (i % 3 == 0 || i % 10 == 3 || i % 10 == 6 || i % 10 == 9 || i / 10 == 3 || i / 10 == 6 || i / 10 == 9){
                 cnt += 1;
             }
         }
