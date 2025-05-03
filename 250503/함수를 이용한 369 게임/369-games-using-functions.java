@@ -1,13 +1,23 @@
 import java.io.*;
 public class Main {
 
-    public static int func(int a, int b){
+    public static int func(int a, int b) {
         int cnt = 0;
-        for(int i = a ; i <= b ; i++ ){
-            if (i % 3 == 0 || i % 10 == 3 || i % 10 == 6 || i % 10 == 9 || i / 10 == 3 || i / 10 == 6 || i / 10 == 9){
-                cnt += 1;
+
+        for (int i = a; i <= b; i++) {
+            // 3의 배수 검사
+            if (i % 3 == 0) {
+                cnt++;
+                continue;
+            }
+
+            // 숫자에 3, 6, 9가 포함되어 있는지 검사
+            String s = Integer.toString(i);
+            if (s.contains("3") || s.contains("6") || s.contains("9")) {
+                cnt++;
             }
         }
+
         return cnt;
     }
 
