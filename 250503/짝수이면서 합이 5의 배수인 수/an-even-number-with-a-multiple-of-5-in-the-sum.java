@@ -4,7 +4,7 @@ public class Main {
     public static void func(int a){
         int tenUpper = a/10;
         int tenDown = a%10;
-        if ((tenDown+tenUpper)%5==0){
+        if ((tenDown+tenUpper)%5==0 && a % 2 == 0){
             System.out.printf("Yes");
         }
         else{
