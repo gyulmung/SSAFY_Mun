@@ -7,7 +7,8 @@ public class Main {
             if(a%100 == 0 && a%400 != 0){
                 System.out.printf("false");
             }
-            System.out.printf("true");
+            else{
+            System.out.printf("true");}
         }
         else{
         System.out.printf("false");}
