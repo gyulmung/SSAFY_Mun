@@ -30,16 +30,15 @@ public class Main {
             arrB[i] = Integer.parseInt(lstB[i]);
         }
 
+        boolean found = false;
 
-        for(int i = 0; i < a; i++){
-            if(arrA[i] == arrB[0]){
-                if(isNum(arrA, arrB, i)){
-                    System.out.printf("Yes");
-                }
-                else{
-                    System.out.printf("No");
-                }
+        for (int i = 0; i <= a - b; i++) {
+            if (arrA[i] == arrB[0] && isNum(arrA, arrB, i)) {
+                found = true;
+                break;
             }
         }
+
+        System.out.println(found ? "Yes" : "No");
     }
 }
