@@ -18,7 +18,7 @@ public class Main {
             System.out.printf("%d * %d = %d",a, c, a*c);
         }
         else if(b == '/'){
-            System.out.printf("%d / %d = %d",a, c, a+c);
+            System.out.printf("%d / %d = %d",a, c, a/c);
         }
         else{
             System.out.printf("False");
